@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de Reparación - FixPhone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><i class="fas fa-mobile-alt"></i> FixPhone</a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="estado.html" class="active">Estado de Reparación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" style="padding: 3rem 2rem; min-height: auto; background-image: none; background-color: var(--primary-color);">
+        <h1>Seguimiento de Reparación</h1>
+        <p>Consulta el estado de tu equipo en tiempo real</p>
+    </div>
+
+    <section class="status-form">
+        <form id="checkStatusForm">
+            <div class="form-group">
+                <label for="orderId">Número de Orden</label>
+                <input type="text" id="orderId" placeholder="Ej: 123456" required>
+            </div>
+            <button type="submit" class="cta-button">Consultar Estado</button>
+        </form>
+    </section>
+
+    <!-- Status Modal -->
+    <div id="statusModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Estado de Reparación</h2>
+            <div id="statusContent" style="text-align: left; margin-bottom: 1.5rem;">
+                <!-- Content will be injected by JS -->
+            </div>
+            <button id="closeStatusModal" class="cta-button">Cerrar</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FixPhone</h3>
+                <p>Soluciones confiables para tus dispositivos móviles.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="servicios.html">Servicios</a>
+                <a href="estado.html">Seguimiento</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> +54 9 11 1234-5678</p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Corrientes 1234, CABA</p>
+                <p><i class="fas fa-envelope"></i> info@fixphone.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FixPhone. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
